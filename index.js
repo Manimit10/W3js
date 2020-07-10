@@ -17,3 +17,7 @@ console.log(
 // console.log(myDate.getHours());
 // console.log(testday.getHours());
 // console.log(testday.getFullYear());
+const screenPrint = document.getElementById('btn');
+screenPrint.addEventListener('click', () => {
+  window.print();
+});
