@@ -40,7 +40,7 @@ function leapYear() {
   userYear = parseInt(userYear);
 
   if (!isNaN(userYear) && userYear > 1000 && userYear < 9999) {
-    if (userYear % 100 === 0 && userYear % 400 === 0) {
+    if ((userYear % 4 === 0 && userYear % 100 != 0) || userYear % 400 === 0) {
       console.log(`${userYear} is leap year!`);
     } else {
       console.log(`${userYear} is Not leap year!`);
