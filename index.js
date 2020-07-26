@@ -34,3 +34,20 @@ const yyyy = today.getFullYear();
 
 today = mm + '/' + dd + '/' + yyyy;
 q3.innerText = today;
+
+function leapYear() {
+  let userYear = document.getElementById('year').value;
+  userYear = parseInt(userYear);
+
+  if (!isNaN(userYear) && userYear > 1000 && userYear < 9999) {
+    if (userYear % 100 === 0 && userYear % 400 === 0) {
+      console.log(`${userYear} is leap year!`);
+    } else {
+      console.log(`${userYear} is Not leap year!`);
+    }
+  } else {
+    console.log('Please enter a valid year');
+  }
+}
+
+// return userYear % 100 === 0 ? userYear % 400 === 0 : userYear % 4 === 0;
