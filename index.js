@@ -53,14 +53,14 @@ function leapYear() {
 // return userYear % 100 === 0 ? userYear % 400 === 0 : userYear % 4 === 0;
 
 // find years between 2014-2050 where the 1st January is Sunday
-// const q7 = document.getElementById('q7');
+const q7 = document.getElementById('q7');
 
 for (i = 2014; i <= 2050; i++) {
   let theYear = new Date(`January 1, ${i}`);
   // console.log(theYear.getDay());
   if (theYear.getDay() === 0) {
-    console.log(`Year of ${theYear.getFullYear()} starts on Sunday!`);
-    // q7.appendChild('p').textContent = `Year of ${theYear.getFullYear()} starts on Sunday!`;
+    q7.innerHTML += `<p>Year of ${theYear.getFullYear()} starts on Sunday!</p>`;
+    // console.log(`Year of ${theYear.getFullYear()} starts on Sunday!`);
   }
 }
 
