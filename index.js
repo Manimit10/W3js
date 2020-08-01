@@ -75,7 +75,7 @@ const cristmas = new Date('Dec 25, 2020');
 const checkDay = new Date(Date().toString());
 // console.log(todayDate);
 q3.innerHTML += `<p> ${checkDay} </p>`;
-console.log(checkDay);
+// console.log(checkDay);
 
 const diffTime = Math.abs(cristmas - checkDay);
 const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
@@ -85,3 +85,23 @@ const q9 = document.getElementById('q9');
 q9.append(`We have ${diffDays} days until Cristmas.`);
 
 // console.log(today.getFullYear());
+
+// Question 10 -- Calculator
+
+function multiply() {
+  let num1 = document.getElementById('num1').value;
+  let num2 = document.getElementById('num2').value;
+  let result = document.getElementById('calResult');
+  res = num1 * num2;
+  console.log(num1);
+  // console.log('multiply' + res);
+  result.innerHTML = `<p>The ruslt is ${res}</p>`;
+}
+function divide() {
+  let num1 = document.getElementById('num1').value;
+  let num2 = document.getElementById('num2').value;
+  let result = document.getElementById('calResult');
+  res = num1 / num2;
+  console.log('divide');
+  result.innerHTML = `<p>The ruslt is ${res}</p>`;
+}
