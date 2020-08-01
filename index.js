@@ -121,3 +121,7 @@ function Fahrenheit() {
   const C = ((F - 32) * 5) / 9;
   output.innerHTML = `<p>${F} Farenheite is equal to ${C} Celsius</p>`;
 }
+
+// question 12
+const q12 = document.getElementById('q12');
+q12.innerHTML = '<p>the URL of this page ' + window.location.href + '</p>';
