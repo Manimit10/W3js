@@ -32,21 +32,25 @@ const dd = String(today.getDate()).padStart(2, '0');
 const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 const yyyy = today.getFullYear();
 
-today = mm + '/' + dd + '/' + yyyy;
+today = dd + '/' + mm + '/' + yyyy;
 q3.innerText = today;
 
 function leapYear() {
   let userYear = document.getElementById('year').value;
   userYear = parseInt(userYear);
+  const span = document.getElementById('span');
 
   if (!isNaN(userYear) && userYear > 1000 && userYear < 9999) {
     if ((userYear % 4 === 0 && userYear % 100 != 0) || userYear % 400 === 0) {
-      console.log(`${userYear} is leap year!`);
+      span.innerHTML = `<p>${userYear} is leap year!</p>`;
+      // console.log(`${userYear} is leap year!`);
     } else {
-      console.log(`${userYear} is Not leap year!`);
+      span.innerHTML = `<p>${userYear} is Not leap year!</p>`;
+      // console.log(`${userYear} is Not leap year!`);
     }
   } else {
-    console.log('Please enter a valid year');
+    // console.log('Please enter a valid year');
+    span.innerHTML = '<p>Please enter a valid year</p>';
   }
 }
 // short form of if-else statement
@@ -70,6 +74,7 @@ const cristmas = new Date('Dec 25, 2020');
 // console.log(todayDate.getDay());
 const checkDay = new Date(Date().toString());
 // console.log(todayDate);
+q3.innerHTML += `<p> ${checkDay} </p>`;
 console.log(checkDay);
 
 const diffTime = Math.abs(cristmas - checkDay);
