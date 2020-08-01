@@ -77,7 +77,7 @@
               <input id="num1" type="text" class="validate" />
             </div>
             <div class="input-field">
-              <i class="material-icons prefix">score</i>
+              <i class="material-icons prefix">dialpad</i>
               <input id="num2" type="text" class="validate" />
               <!-- <label>Enter year</label> -->
             </div>
@@ -99,10 +99,32 @@
           <div class="card-panel amber darken-3">
             <div class="row">
               <div class="input-field col s12">
-                <i class="material-icons prefix">textsms</i>
-                <input type="text" id="autocomplete-input" class="autocomplete" />
-                <label for="autocomplete-input">Autocomplete</label>
+                <i clfass="material-icons prefix">Enter the degree</i>
+                <input type="text" id="degree" class="autocomplete" />
               </div>
+              <div class="input-field col s12">
+                <button
+                  onclick="Celsius()"
+                  class="btn waves-effect waves-light lime darken-2"
+                  type="submit"
+                  name="action"
+                >
+                  Convert to Celsius
+                  <i class="material-icons right">ac_unit</i>
+                </button>
+              </div>
+              <div class="input-field col s12">
+                <button
+                  onclick="Fahrenheit()"
+                  class="btn waves-effect waves-light lime darken-2"
+                  type="submit"
+                  name="action"
+                >
+                  Convert to Celsius
+                  <i class="material-icons right">ac_unit</i>
+                </button>
+              </div>
+              <div id="outputDegree"></div>
             </div>
           </div>
         </div>

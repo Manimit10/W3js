@@ -105,3 +105,19 @@ function divide() {
   console.log('divide');
   result.innerHTML = `<p>The ruslt is ${res}</p>`;
 }
+
+// Question 11
+
+function Celsius() {
+  const C = document.getElementById('degree').value;
+  const output = document.getElementById('outputDegree');
+  const F = (C * 9) / 5 + 32;
+  output.innerHTML = `<p>${C} Celsius is equal to ${F} Farenhite</p>`;
+}
+
+function Fahrenheit() {
+  const F = document.getElementById('degree').value;
+  const output = document.getElementById('outputDegree');
+  const C = ((F - 32) * 5) / 9;
+  output.innerHTML = `<p>${F} Farenheite is equal to ${C} Celsius</p>`;
+}
