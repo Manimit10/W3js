@@ -125,3 +125,11 @@ function Fahrenheit() {
 // question 12
 const q12 = document.getElementById('q12');
 q12.innerHTML = '<p>the URL of this page ' + window.location.href + '</p>';
+
+// question 14
+function checkFile() {
+  const file = document.getElementById('file').value;
+  const extResult = document.getElementById('extResult');
+  const extension = file.split('.').pop();
+  extResult.innerHTML = `<p>The file has ${extension} extension.</p>`;
+}
