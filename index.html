@@ -159,39 +159,47 @@
           <div class="card-panel pink lighten-3">
             <div class="row">
               <div class="input-field col s12">
-                <i clfass="material-icons prefix">Enter the degree</i>
-                <input type="text" class="autocomplete" />
+                <i clfass="material-icons prefix">Enter a number</i>
+                <input type="text" class="autocomplete" id="thirteen" />
               </div>
               <div class="input-field col s12">
                 <button
-                  onclick="Celsius()"
-                  class="btn waves-effect waves-light lime darken-2"
-                  type="submit"
+                  onclick="CheckTo13()"
+                  class="btn waves-effect waves-light purple darken-4"
+                  type="button"
                   name="action"
                 >
-                  Convert to Celsius
-                  <i class="material-icons right">ac_unit</i>
+                  See the Diffrence
+                  <i class="material-icons right">check_circle</i>
                 </button>
               </div>
-              <div class="input-field col s12">
-                <button
-                  onclick="Fahrenheit()"
-                  class="btn waves-effect waves-light lime darken-2"
-                  type="submit"
-                  name="action"
-                >
-                  Convert to Celsius
-                  <i class="material-icons right">ac_unit</i>
-                </button>
-              </div>
-              <div></div>
+
+              <div id="to13"></div>
             </div>
           </div>
         </div>
         <!-- third card -->
         <div class="col s12 m4">
           <div class="card-panel pink lighten-3">
-            <div id="q12"></div>
+            
+              <div class="input-field">
+                <i class="material-icons prefix">dialpad</i>
+                <input id="n1" type="text" class="validate" />
+              </div>
+              <div class="input-field">
+                <i class="material-icons prefix">dialpad</i>
+                <input id="n2" type="text" class="validate" />
+                <!-- <label>Enter year</label> -->
+              </div>
+              <!-- <input type="text" id="year" /> -->
+              <!-- <button onclick="leapYear()">Enter</button> -->
+              <button onclick="magicAdd()" class="btn waves-effect waves-light purple darken-4" type="submit" name="action">
+                Magical Add
+                <i class="material-icons right">calculate</i>
+              </button>
+                           
+              <div id="q16"></div>
+            </div>
           </div>
         </div>
       </div>

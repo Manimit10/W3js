@@ -133,3 +133,37 @@ function checkFile() {
   const extension = file.split('.').pop();
   extResult.innerHTML = `<p>The file has ${extension} extension.</p>`;
 }
+
+//question 15
+function CheckTo13() {
+  let thirteen = document.getElementById('thirteen').value;
+  thirteen = parseInt(thirteen);
+  const to13 = document.getElementById('to13');
+  // console.log(typeof thirteen);
+  if (thirteen === 13) {
+    to13.innerHTML = '<p>You need to enter any number except 13!</p>';
+  } else if (thirteen > 13) {
+    const x = (thirteen - 13) * 2;
+    // console.log(x);
+    to13.innerHTML = `<p>the double of difference from 13 is ${x}</p>`;
+  } else if (thirteen < 13) {
+    const c = thirteen - 13;
+    // console.log(c);
+    to13.innerHTML = `<p>the difference to 13 is ${c}</p>`;
+  }
+}
+
+// question 16
+function magicAdd() {
+  let n1 = document.getElementById('n1').value;
+  let n2 = document.getElementById('n2').value;
+  const q16 = document.getElementById('q16');
+  n1 = parseInt(n1);
+  n2 = parseInt(n2);
+  // console.log(n1 + n2);
+  if (n1 === n2) {
+    q16.innerHTML = `<p> WoW you Did a Magic!</p><p>The result is ${(n1 + n2) * 2}</p>`;
+  } else {
+    q16.innerHTML = `<p>The result is ${n1 + n2}</p>`;
+  }
+}
