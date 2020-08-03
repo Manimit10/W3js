@@ -167,3 +167,21 @@ function magicAdd() {
     q16.innerHTML = `<p>The result is ${n1 + n2}</p>`;
   }
 }
+
+// question 17
+function addNinteen() {
+  let number = document.getElementById('number').value;
+  number = parseInt(number);
+
+  const ninteenRes = document.getElementById('ninteenRes');
+  // console.log(number);
+  if (number === 19) {
+    ninteenRes.innerHTML = '<p>do not enter 19</p>';
+  } else if (number < 19) {
+    ninteenRes.innerHTML = `<p>The absolute difference is ${Math.abs(number - 19)}</p>`;
+  } else {
+    ninteenRes.innerHTML = `<p>You got magic difference!</p><p>The absolute difference is ${
+      Math.abs(number - 19) * 3
+    }</p>`;
+  }
+}
