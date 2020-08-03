@@ -56,6 +56,24 @@ function leapYear() {
 // short form of if-else statement
 // return userYear % 100 === 0 ? userYear % 400 === 0 : userYear % 4 === 0;
 
+// Question 4
+
+function triArea() {
+  let side1 = document.getElementById('side1').value;
+  let side2 = document.getElementById('side2').value;
+  let side3 = document.getElementById('side3').value;
+  side1 = parseInt(side1);
+  side2 = parseInt(side2);
+  side3 = parseInt(side3);
+
+  const resultArea = document.getElementById('resultArea');
+
+  let s = (side1 + side2 + side3) / 2;
+  let area = Math.sqrt(s * ((s - side1) * (s - side2) * (s - side3)));
+  console.log(area);
+  resultArea.innerHTML = `<p>The area of Triangle is ${area}</p>`;
+}
+
 // find years between 2014-2050 where the 1st January is Sunday
 const q7 = document.getElementById('q7');
 
