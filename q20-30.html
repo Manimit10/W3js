@@ -48,17 +48,29 @@
                     <input id="position" type="text" class="validate" />
                   </div>
                 <button onclick="deleteChar()" class="btn waves-effect waves-light" type="submit" name="action">
-                  add Py
-                  <i class="material-icons right">print</i>
+                    <i class="material-icons right">published_with_changes</i>
+                  Remove Character
                 </button>
                 <div id="newStr"></div>
               </div>
         </div>
         <!-- third card -->
         <div class="col s12 m4">
-          <div class="card-panel teal lighten-3">
-            <div id="q3"></div>
-          </div>
+            <div class="card-panel teal lighten-4">
+                <div class="center-align">
+                  <h5 class="card-title">Question 23</span>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">spellcheck</i>
+                  <input id="userWord" type="text" class="validate" />
+                </div>
+                
+                <button onclick="swapStr()" class="btn waves-effect waves-light" type="submit" name="action">
+                    <i class="material-icons right">published_with_changes</i>
+                  Swap Letters
+                </button>
+                <div id="resStr"></div>
+              </div>
         </div>
       </div>
     </div>
