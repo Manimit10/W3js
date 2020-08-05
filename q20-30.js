@@ -34,10 +34,22 @@ function swapStr() {
   if (userWord.length >= 1) {
     strAr = Array.from(userWord);
     const response = strAr.reverse();
-    console.log(response.join(''));
     resStr.innerHTML = `<p>I reverse it <em>${response.join('')}<em></p>`;
   } else {
     console.log('error!');
     resStr.innerHTML = `<p>Please Eneter Something</p>`;
   }
+}
+// Question 24
+function addFB() {
+  const inStr = document.getElementById('fbStr').value;
+  const out = document.getElementById('outFbStr');
+
+  const inArr = Array.from(inStr);
+  const firstChar = inArr[0];
+
+  inArr.push(firstChar);
+  inArr.unshift(firstChar);
+
+  out.innerHTML = `<p>I changed it <em>${inArr.join('')}<em></p>`;
 }
