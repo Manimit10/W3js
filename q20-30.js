@@ -53,3 +53,17 @@ function addFB() {
 
   out.innerHTML = `<p>I changed it <em>${inArr.join('')}<em></p>`;
 }
+// question 25
+function divide() {
+  let number = document.getElementById('number').value;
+  number = parseInt(number);
+  const divsible = document.getElementById('divisible');
+
+  if (number % 3 === 0) {
+    divsible.innerHTML = `<p>Divisible by 3</p>`;
+  } else if (number % 7 === 0) {
+    divsible.innerHTML = `<p>Divisible by 7</p>`;
+  } else {
+    divsible.innerHTML = `<p>Not divisible by 3 and 7</p>`;
+  }
+}
