@@ -67,3 +67,32 @@ function divide() {
     divsible.innerHTML = `<p>Not divisible by 3 and 7</p>`;
   }
 }
+// Question 26
+function threeChar() {
+  const mainStr = document.getElementById('mainStr').value;
+  const out = document.getElementById('out');
+
+  if (mainStr.length >= 3) {
+    const subStr = mainStr.substring(0, 3);
+    const output = subStr + mainStr + subStr;
+    out.innerHTML = `<p>${output}</p>`;
+  } else {
+    out.innerHTML = `<p>should be more than 3 character</p>`;
+  }
+}
+// Question 29
+function threeNum() {
+  let num1 = document.getElementById('num1').value;
+  let num2 = document.getElementById('num2').value;
+  let num3 = document.getElementById('num3').value;
+  num1 = parseInt(num1);
+  num2 = parseInt(num2);
+  num3 = parseInt(num3);
+  const result = document.getElementById('result');
+
+  if ((num1 >= 50 && num1 <= 99) || (num2 >= 50 && num2 <= 99) || (num3 >= 50 && num3 <= 99)) {
+    result.innerText = 'at least one is in the range';
+  } else {
+    result.innerText = 'no one in the range';
+  }
+}
