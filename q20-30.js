@@ -96,3 +96,19 @@ function threeNum() {
     result.innerText = 'no one in the range';
   }
 }
+// Question 30
+function checkScript() {
+  const givenStr = document.getElementById('givenStr').value;
+  const wordScript = document.getElementById('wordScript');
+  const script = 'Script';
+  const position = givenStr.indexOf(script, 4);
+  // console.log(givenStr);
+  // console.log(position);
+  if (position === -1) {
+    wordScript.innerHTML = `<p>I cound not find <b>${script}</b> in the given word</p>`;
+    // console.log('I cound not find it');
+  } else if (position === 4) {
+    // console.log(givenStr.replace(script, ''));
+    wordScript.innerHTML = `<p>See the magic: <b>${givenStr.replace(script, '')}</b></p>`;
+  }
+}
