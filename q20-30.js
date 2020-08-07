@@ -112,3 +112,15 @@ function checkScript() {
     wordScript.innerHTML = `<p>See the magic: <b>${givenStr.replace(script, '')}</b></p>`;
   }
 }
+// Question 31
+function threeInt() {
+  let int1 = document.getElementById('int1').value;
+  let int2 = document.getElementById('int2').value;
+  let int3 = document.getElementById('int3').value;
+  const intResult = document.getElementById('intResult');
+  int1 = parseInt(int1);
+  int2 = parseInt(int2);
+  int3 = parseInt(int3);
+
+  intResult.innerHTML = `<p>The biggest number is <b>${Math.max(int1, int2, int3)}</b></p>`;
+}
