@@ -57,20 +57,28 @@
         </div>
         <!-- third card -->
         <div class="col s12 m4">
-            <div class="card-panel teal lighten-4">
+            <div class="card-panel teal lighten-4" style="height: 400px;">
                 <div class="center-align">
-                  <h5 class="card-title">Question 23</span>
+                  <h5 class="card-title">Question 36</span>
                 </div>
                 <div class="input-field">
-                  <i class="material-icons prefix">spellcheck</i>
-                  <input id="userWord" type="text" class="validate" />
+                  <i class="material-icons prefix">dialpad</i>
+                  <input id="firstNum" type="text" class="validate" />
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">dialpad</i>
+                  <input id="SecNum" type="text" class="validate" />
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">dialpad</i>
+                  <input id="ThirdNum" type="text" class="validate" />
                 </div>
                 
-                <button onclick="swapStr()" class="btn waves-effect waves-light" type="submit" name="action">
+                <button onclick="lastDigit()" class="btn waves-effect waves-light" type="submit" name="action">
                     <i class="material-icons right">published_with_changes</i>
-                  Swap Letters
+                  Last Digit Match
                 </button>
-                <div id="resStr"></div>
+                <div id="msg"></div>
               </div>
         </div>
       </div>

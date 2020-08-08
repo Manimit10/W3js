@@ -24,3 +24,22 @@ function charExist() {
     outStr.innerHTML = `<p>The <b>@</b> is not exist in right place!</p>`;
   }
 }
+// Question 36
+function lastDigit() {
+  let firstNum = document.getElementById('firstNum').value;
+  let SecNum = document.getElementById('SecNum').value;
+  let ThirdNum = document.getElementById('ThirdNum').value;
+  const msg = document.getElementById('msg');
+  firstNum = parseInt(firstNum);
+  SecNum = parseInt(SecNum);
+  ThirdNum = parseInt(ThirdNum);
+  console.log(firstNum, lastFinder(firstNum), SecNum, lastFinder(SecNum), ThirdNum, lastFinder(ThirdNum));
+  if (lastFinder(firstNum) === lastFinder(SecNum) && lastFinder(firstNum) === lastFinder(ThirdNum)) {
+    msg.innerHTML = `<p>Grete! All number ended with <b>${lastFinder(firstNum)}</b></p>`;
+  } else {
+    msg.innerHTML = `<p>Last digits are not same</p>`;
+  }
+}
+function lastFinder(int) {
+  return int % 10;
+}
