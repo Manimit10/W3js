@@ -13,3 +13,7 @@ function Nearest() {
     closer.innerHTML = `<p>${num2} is closer to 100</p>`;
   }
 }
+// Question 35
+function charExist() {
+  const myStr = document.getElementById('myStr').value;
+}
