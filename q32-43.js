@@ -16,4 +16,11 @@ function Nearest() {
 // Question 35
 function charExist() {
   const myStr = document.getElementById('myStr').value;
+  const outStr = document.getElementById('outStr');
+
+  if (myStr.charAt(1) === '@' || myStr.charAt(2) === '@' || myStr.charAt(3) === '@') {
+    outStr.innerHTML = `<p>The <b>@</b> is exist between position 2 to 4</p>`;
+  } else {
+    outStr.innerHTML = `<p>The <b>@</b> is not exist in right place!</p>`;
+  }
 }
