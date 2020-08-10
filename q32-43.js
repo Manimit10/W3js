@@ -48,5 +48,13 @@ function lastFinder(int) {
 function threeChar() {
   const out3Char = document.getElementById('out3Char');
   const given = document.getElementById('given').value;
-  console.log(given);
+  console.log(given.length);
+  const sb = given.substr(0, 3);
+  if (given.length >= 3) {
+    out3Char.innerHTML = `<p>${sb.toLowerCase()}</p>`;
+    console.log(`${sb.toLowerCase()}`);
+  } else {
+    console.log(`${sb.toUpperCase()} `);
+    out3Char.innerHTML = `<p>${sb.toUpperCase()} </p>`;
+  }
 }
