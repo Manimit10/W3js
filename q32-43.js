@@ -58,3 +58,18 @@ function threeChar() {
     out3Char.innerHTML = `<p>${sb.toUpperCase()} </p>`;
   }
 }
+// Question 40
+function eight() {
+  let n1 = document.getElementById('number1').value;
+  let n2 = document.getElementById('number2').value;
+  const outEight = document.getElementById('outEight');
+  n1 = parseInt(n1);
+  n2 = parseInt(n2);
+  if (n1 === 8 || n2 === 8) {
+    outEight.innerHTML = `<p><b>You win! </b>At least one number is equal to 8</p>`;
+  } else if (n1 + n2 === 8 || n1 - n2 === 8) {
+    outEight.innerHTML = `<p><b>You win! </b>Sum or difference is equal to 8</p>`;
+  } else {
+    outEight.innerHTML = `<p><b>Try Again!</b></p>`;
+  }
+}
