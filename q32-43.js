@@ -43,3 +43,10 @@ function lastDigit() {
 function lastFinder(int) {
   return int % 10;
 }
+
+// Question 37
+function threeChar() {
+  const out3Char = document.getElementById('out3Char');
+  const given = document.getElementById('given').value;
+  console.log(given);
+}
