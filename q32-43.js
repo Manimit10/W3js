@@ -41,7 +41,7 @@ function lastDigit() {
   }
 }
 function lastFinder(int) {
-  return int % 10;
+  return Math.abs(int) % 10;
 }
 
 // Question 37
@@ -72,4 +72,10 @@ function eight() {
   } else {
     outEight.innerHTML = `<p><b>Try Again!</b></p>`;
   }
+}
+// Question 43
+function rightmost() {
+  let mainInt = document.getElementById('mainInt').value;
+  let outInt = document.getElementById('outInt');
+  outInt.innerHTML = `<p>Rightmost Digit is <b>${lastFinder(mainInt)}</b></p>`;
 }
