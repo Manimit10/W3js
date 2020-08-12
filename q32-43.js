@@ -79,3 +79,13 @@ function rightmost() {
   let outInt = document.getElementById('outInt');
   outInt.innerHTML = `<p>Rightmost Digit is <b>${lastFinder(mainInt)}</b></p>`;
 }
+
+// Question 48
+function reverse() {
+  const inputStr = document.getElementById('inputStr').value;
+  const outputStr = document.getElementById('outputStr');
+  const arr = inputStr.split('');
+  const revAr = arr.reverse();
+
+  outputStr.innerHTML = `<p><b>${revAr.join('')}</b></p>`;
+}
