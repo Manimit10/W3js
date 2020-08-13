@@ -89,3 +89,14 @@ function reverse() {
 
   outputStr.innerHTML = `<p><b>${revAr.join('')}</b></p>`;
 }
+
+function nextLetter() {
+  const charin = document.getElementById('charin').value;
+  const charout = document.getElementById('charout');
+  console.log(charin);
+  let see = charin.charCodeAt(0);
+  console.log(see);
+  let newChar = see++;
+  console.log(see);
+  console.log(String.fromCharCode(newChar));
+}
