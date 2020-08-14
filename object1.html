@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 20 to 30</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="object1.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h3 class="center-align">JavaScript Object 1-9</h3>
+      </div>
+      <!-- First row -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel teal lighten-4">
+            <div class="center-align">
+              <h5 class="card-title">Question 1</span>
+            </div>
+           
+            <button onclick="firstObj()" class="btn waves-effect waves-light" type="submit" name="action">
+              Show Object
+              <i class="material-icons right">feedback</i>
+            </button>
+            <div id="close"></div>
+          </div>
+        </div>
+        <!-- second card -->
+        <div class="col s12 m4">
+            <div class="card-panel teal lighten-4">
+                <div class="center-align">
+                  <h5 class="card-title">Question 35</span>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">spellcheck</i>
+                  <input id="myStr" type="text" class="validate" />
+                </div>
+               
+                <button onclick="charExist()" class="btn waves-effect waves-light" type="submit" name="action">
+                    <i class="material-icons right">published_with_changes</i>
+                  Check Char
+                </button>
+                <div id="outStr"></div>
+              </div>
+        </div>
+        <!-- third card -->
+        <div class="col s12 m4">
+            <div class="card-panel teal lighten-4" style="height: 400px;">
+                <div class="center-align">
+                  <h5 class="card-title">Question 36</span>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">dialpad</i>
+                  <input id="firstNum" type="text" class="validate" />
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">dialpad</i>
+                  <input id="SecNum" type="text" class="validate" />
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">dialpad</i>
+                  <input id="ThirdNum" type="text" class="validate" />
+                </div>
+                
+                <button onclick="lastDigit()" class="btn waves-effect waves-light" type="submit" name="action">
+                    <i class="material-icons right">published_with_changes</i>
+                  Last Digit Match
+                </button>
+                <div id="msg"></div>
+              </div>
+        </div>
+      </div>
+      <!-- second row -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel pink lighten-4">
+            <div class="center-align">
+              <h5 class="card-title">Question 37</span>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">spellcheck</i>
+              <input id="given" type="text" class="validate" />
+            </div>
+            <button onclick="threeChar()" class="btn waves-effect waves-light pink darken-4" type="submit" name="action">
+              Give 3 Character
+              <i class="material-icons right">print</i>
+            </button>
+            <div id="out3Char"></div>
+          </div>
+        </div>
+        <!-- second card -->
+        <div class="col s12 m4">
+            <div class="card-panel pink lighten-4">
+                <div class="center-align">
+                  <h5 class="card-title">Question 40</span>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">dialpad</i>
+                    <input id="number1" type="text" class="validate" />
+                  </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">dialpad</i>
+                    <input id="number2" type="text" class="validate" />
+                  </div>
+                <button onclick="eight()" class="btn waves-effect waves-light pink darken-4" type="submit" name="action">
+                    <i class="material-icons right">calculate</i>
+                  Find Magic
+                </button>
+                <div id="outEight"></div>
+              </div>
+        </div>
+        <!-- third card -->
+        <div class="col s12 m4">
+            <div class="card-panel pink lighten-4">
+                <div class="center-align">
+                  <h5 class="card-title">Question 43</span>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">dialpad</i>
+                  <input id="mainInt" type="text" class="validate" />
+                </div>
+                
+                <button onclick="rightmost()" class="btn waves-effect waves-light pink darken-4" type="submit" name="action">
+                    <i class="material-icons right">calculate</i>
+                  Last Digit
+                </button>
+                <div id="outInt"></div>
+              </div>
+        </div>
+      </div>
+      <!-- third row -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel purple lighten-4" >
+            <div class="center-align">
+              <h5 class="card-title">Question 48</span>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">spellcheck</i>
+              <input id="inputStr" type="text" class="validate" />
+            </div>
+            <button onclick="reverse()" class="btn waves-effect waves-light purple darken-4" type="submit" name="action">
+              Reverse
+              <i class="material-icons right">check_circle</i>
+            </button>
+            <p id="outputStr"></p>
+          </div>
+        </div>
+        <!-- second card -->
+        <div class="col s12 m4">
+            <div class="card-panel purple lighten-4">
+                <div class="center-align">
+                  <h5 class="card-title">Question 49</span>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">spellcheck</i>
+                    <input id="charin" type="text" class="validate" />
+                  </div>
+                <button onclick="nextLetter()" class="btn waves-effect waves-light purple darken-4" type="submit" name="action">
+                    <i class="material-icons right">check_circle_outline</i>
+                  Find Script
+                </button>
+                <div id="charout"></div>
+              </div>
+        </div>
+        <!-- third card -->
+        <div class="col s12 m4">
+          <div class="card-panel purple lighten-4" style="height: 400px;">
+            <div class="center-align">
+              <h5 class="card-title">Question 31</span>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">dialpad</i>
+              <input id="int1" type="text" class="validate" />
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">dialpad</i>
+              <input id="int2" type="text" class="validate" />
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">dialpad</i>
+              <input id="int3" type="text" class="validate" />
+            </div>
+            <button onclick="threeInt()" class="btn waves-effect waves-light purple darken-4" type="submit" name="action">
+              Check Numbers
+              <i class="material-icons right">check_circle</i>
+            </button>
+            <p id="intResult"></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
