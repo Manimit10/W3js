@@ -12,6 +12,23 @@ Object.size = function (obj) {
   }
   return size;
 };
+const library = [
+  {
+    author: 'Bill Gates',
+    title: 'The Road Ahead',
+    readingStatus: true,
+  },
+  {
+    author: 'Steve Jobs',
+    title: 'Walter Isaacson',
+    readingStatus: true,
+  },
+  {
+    author: 'Suzanne Collins',
+    title: 'Mockingjay: The Final Book of The Hunger Games',
+    readingStatus: false,
+  },
+];
 
 // question 1
 function firstObj() {
@@ -36,3 +53,44 @@ function obj3() {
   const obj3 = document.getElementById('obj3');
   obj3.innerHTML = `<p>The object has <b>${Object.size(Student)}</b> members.</p>`;
 }
+// Question 4
+let A = document.getElementsByClassName('A');
+const AuthorB = document.getElementById('Author');
+AuthorB.addEventListener('click', () => {
+  for (let i = 0; i < library.length; i++) {
+    for (let i = 0; i < A.length; i++) {
+      const elObj = library[i].author;
+      const element = A[i];
+      element.innerText = elObj;
+    }
+  }
+});
+let T = document.getElementsByClassName('T');
+const TitleBut = document.getElementById('Title');
+TitleBut.addEventListener('click', () => {
+  for (let i = 0; i < library.length; i++) {
+    for (let i = 0; i < T.length; i++) {
+      const elObj = library[i].title;
+      const element = T[i];
+      element.innerText = elObj;
+    }
+  }
+});
+
+let R = document.getElementsByClassName('RL');
+// const f = Array.from(R);
+// console.log(f);
+const readingBut = document.getElementById('ReadingList');
+readingBut.addEventListener('click', () => {
+  for (let i = 0; i < library.length; i++) {
+    for (let i = 0; i < R.length; i++) {
+      const element = R[i];
+      const elObj = library[i].readingStatus;
+      if (elObj === true) {
+        element.innerText = 'already read';
+      } else {
+        element.innerText = 'not yet read';
+      }
+    }
+  }
+});
