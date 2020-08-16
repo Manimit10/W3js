@@ -5,7 +5,7 @@ const Student = {
 };
 
 Object.size = function (obj) {
-  var size = 0,
+  let size = 0,
     key;
   for (key in obj) {
     if (obj.hasOwnProperty(key)) size++;
@@ -79,7 +79,6 @@ TitleBut.addEventListener('click', () => {
 
 let R = document.getElementsByClassName('RL');
 // const f = Array.from(R);
-// console.log(f);
 const readingBut = document.getElementById('ReadingList');
 readingBut.addEventListener('click', () => {
   for (let i = 0; i < library.length; i++) {
@@ -94,3 +93,23 @@ readingBut.addEventListener('click', () => {
     }
   }
 });
+// Question 5
+
+const cylander = document.getElementById('cylander');
+const cylanderVol = document.getElementById('cylanderVol');
+cylander.addEventListener('click', () => {
+  let height = document.getElementById('height').value;
+  let radius = document.getElementById('radius').value;
+  height = parseInt(height);
+  radius = parseInt(radius);
+  console.log(height, radius);
+  cylanderVol.innerHTML = `<p>
+      The volume of cylinder is <b>${volumeFinder(radius, height).toFixed(2)}</b>
+    </p>`;
+
+  console.log(volumeFinder(radius, height));
+});
+function volumeFinder(radius, height) {
+  return Math.PI * Math.pow(radius, 2) * height;
+  // return Math.round(Math.PI * Math.pow(radius, 2) * height) / 100;
+}
