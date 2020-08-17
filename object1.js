@@ -95,21 +95,27 @@ readingBut.addEventListener('click', () => {
 });
 // Question 5
 
+class Cylinder {
+  constructor(cyl_height, cyl_diameter) {
+    this.cyl_height = cyl_height;
+    this.cyl_diameter = cyl_diameter;
+  }
+  vol() {
+    const radius = this.cyl_diameter / 2;
+    return this.cyl_height * Math.PI * radius * radius;
+  }
+}
+
 const cylander = document.getElementById('cylander');
 const cylanderVol = document.getElementById('cylanderVol');
 cylander.addEventListener('click', () => {
   let height = document.getElementById('height').value;
-  let radius = document.getElementById('radius').value;
+  let diameter = document.getElementById('diameter').value;
   height = parseInt(height);
-  radius = parseInt(radius);
-  console.log(height, radius);
-  cylanderVol.innerHTML = `<p>
-      The volume of cylinder is <b>${volumeFinder(radius, height).toFixed(2)}</b>
-    </p>`;
+  diameter = parseInt(diameter);
 
-  console.log(volumeFinder(radius, height));
+  let cyl = new Cylinder(height, diameter);
+  cylanderVol.innerHTML = `<p>
+      The volume of cylinder is <b>${cyl.vol().toFixed(4)}</b>
+    </p>`;
 });
-function volumeFinder(radius, height) {
-  return Math.PI * Math.pow(radius, 2) * height;
-  // return Math.round(Math.PI * Math.pow(radius, 2) * height) / 100;
-}
