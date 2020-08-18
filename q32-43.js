@@ -120,3 +120,15 @@ function increaseDigit() {
     strout.innerHTML = `<p>${nextChar.join('')}</p>`;
   });
 }
+// Question 50
+function capitalize() {
+  const sentence = document.getElementById('sentence').value;
+  let outSen = document.getElementById('outSen');
+  let set = [];
+  const words = sentence.toLowerCase().split(' ');
+  for (let index = 0; index < words.length; index++) {
+    const word = words[index];
+    set.push(word[0].toUpperCase().concat(word.substr(1)));
+  }
+  outSen.innerHTML = `<p>${set.join(' ')}</p>`;
+}
