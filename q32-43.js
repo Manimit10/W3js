@@ -100,3 +100,21 @@ function nextLetter() {
   console.log(see);
   console.log(String.fromCharCode(newChar));
 }
+// Question 49
+function increaseDigit() {
+  const strin = document.getElementById('strin').value;
+  const strout = document.getElementById('strout');
+  console.log(strin);
+  const chars = strin.split('');
+  console.log(chars);
+  chars.forEach((el, index) => {
+    strin.charCodeAt(index);
+    console.log(el);
+    if ((index > 65 && index <= 89) || (index > 97 && index <= 121)) {
+      const out = String.fromCharCode(index + 1).concat();
+      console.log(out);
+    } else if (index === 90 || index === 122) {
+      const out = String.fromCharCode(index - 25);
+    }
+  });
+}
