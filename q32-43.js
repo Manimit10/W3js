@@ -107,14 +107,18 @@ function increaseDigit() {
   console.log(strin);
   const chars = strin.split('');
   console.log(chars);
+  let nextChar = [];
   chars.forEach((el, index) => {
-    strin.charCodeAt(index);
+    let pos = strin.charCodeAt(index);
     console.log(el);
-    if ((index > 65 && index <= 89) || (index > 97 && index <= 121)) {
-      const out = String.fromCharCode(index + 1).concat();
-      console.log(out);
-    } else if (index === 90 || index === 122) {
-      const out = String.fromCharCode(index - 25);
+    console.log(pos);
+    if (pos === 90 || pos === 122) {
+      nextChar.push(String.fromCharCode(pos - 25));
+    } else if ((pos > 65 && pos <= 89) || (pos >= 97 && pos <= 121)) {
+      nextChar.push(String.fromCharCode(pos + 1));
+    } else {
+      nextChar.push(String.fromCharCode(pos));
     }
+    console.log(nextChar.join(''));
   });
 }
