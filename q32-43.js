@@ -104,14 +104,11 @@ function nextLetter() {
 function increaseDigit() {
   const strin = document.getElementById('strin').value;
   const strout = document.getElementById('strout');
-  console.log(strin);
   const chars = strin.split('');
-  console.log(chars);
   let nextChar = [];
   chars.forEach((el, index) => {
     let pos = strin.charCodeAt(index);
-    console.log(el);
-    console.log(pos);
+
     if (pos === 90 || pos === 122) {
       nextChar.push(String.fromCharCode(pos - 25));
     } else if ((pos > 65 && pos <= 89) || (pos >= 97 && pos <= 121)) {
@@ -119,6 +116,7 @@ function increaseDigit() {
     } else {
       nextChar.push(String.fromCharCode(pos));
     }
-    console.log(nextChar.join(''));
+
+    strout.innerHTML = `<p>${nextChar.join('')}</p>`;
   });
 }
