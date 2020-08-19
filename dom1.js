@@ -12,3 +12,15 @@ jsStyle.addEventListener('click', (e) => {
 });
 
 // Question 2
+function getFormvalue() {
+  const form = document.getElementById('form1');
+  for (let i = 0; i < form.length; i++) {
+    if (form[i].value != 'Submit') {
+      console.log(form[i].value);
+    }
+  }
+  //   let first = form.firstElementChild;
+  //   let second = first.nextSibling.nextSibling.nextSibling;
+  //   console.log(first.value);
+  //   console.log(second.value);
+}
