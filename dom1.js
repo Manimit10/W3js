@@ -28,5 +28,5 @@ function getFormvalue() {
 function changeBG() {
   const par = document.getElementById('paragraph');
   par.style.backgroundColor = 'purple';
-  console.log(par);
+  //   console.log(par);
 }
