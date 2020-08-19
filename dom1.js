@@ -24,3 +24,9 @@ function getFormvalue() {
   //   console.log(first.value);
   //   console.log(second.value);
 }
+// Question 3
+function changeBG() {
+  const par = document.getElementById('paragraph');
+  par.style.backgroundColor = 'purple';
+  console.log(par);
+}
